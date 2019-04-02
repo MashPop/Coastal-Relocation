@@ -14,16 +14,17 @@ button:focus {
     outline: none;
 }
 
-aside > ul > li {
-    display: inlin
-}
+aside > ul > li {}
 
 .navbar {
     transition: 0.5s ease;
 }
 
 .navbar.scrolled {
-    background-color: #0071A1
+    background-color: #0071A1;
+    -webkit-box-shadow: 4px 2px 5px -2px rgba(0, 0, 0, 0.33);
+    -moz-box-shadow: 4px 2px 5px -2px rgba(0, 0, 0, 0.33);
+    box-shadow: 4px 2px 5px -2px rgba(0, 0, 0, 0.33)
 }
 
 
@@ -44,10 +45,16 @@ aside > ul > li {
     text-align: left;
     height: 47px;
     transition: 0.5s ease;
-    border-radius: 9px;
+
     padding-left: 29px;
     font-family: sans-serif;
+
 }
+
+
+
+
+
 
 .button-active {
     background-color: white;
@@ -55,9 +62,10 @@ aside > ul > li {
 }
 
 .default-button:hover {
-    background-color: white;
-    color: #0071A1;
-    cursor: pointer
+    border: solid;
+    color: white;
+    cursor: pointer;
+
 }
 
 .default-button-outlined {
@@ -82,6 +90,10 @@ aside > ul > li {
     cursor: pointer;
 }
 
+aside > ul {
+    padding-right: 24px;
+}
+
 .list-button {
     display: inline-block;
     margin-top: 10px;
@@ -102,17 +114,18 @@ aside {
     position: fixed;
     left: 0px;
     z-index: 1;
-    width: 252px;
+
     height: 100%;
 }
 
 .aside-button.moved {
-    color: #0071A1
+    border-radius: 0px;
+    ;
 }
 
 .logo-micro {
     display: none;
-    width: 230px;
+    width: 215px;
     margin-left: -27px;
     transition: 1s ease;
     opacity: 0;
