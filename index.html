@@ -1,0 +1,118 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Coastal Relocation</title>
+    <meta name="Description" content="Basic Description">
+    <meta name="Keywords" content="Gulfcoast Mississippi Relocation Coastal Harrison County">
+    <link rel="stylesheet" href="main.css">
+    <link rel="shortcut-icon" href="Branding/static1.squarespace.png">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+</head>
+
+<body>
+    <aside class="navbar">
+        <ul>
+            <li><img class="logo-micro" src="Branding/logo%20white.png"></li>
+            <li>
+                <button class="default-button button-active ">Home</button>
+            </li>
+            <li>
+                <button class="default-button ">Education</button>
+            </li>
+            <li>
+                <button class="default-button">Contact</button>
+            </li>
+            <li>
+                <details>
+                    <summary class="default-button">Amenities <i class="material-icons">add</i></summary>
+
+                    <button class="default-button-outlined list-button">Button</button>
+                    <button class="default-button-outlined list-button">Button</button>
+                    <button class="default-button-outlined list-button">Button</button>
+                </details>
+            </li>
+            <li>
+                <button class="default-button">Button</button>
+            </li>
+            <li>
+                <button class="default-button">Button</button>
+            </li>
+            <li>
+                <button class="default-button">Button</button>
+            </li>
+        </ul>
+    </aside>
+    <div class="hero-container">
+        <img class="hero-img" src="Images/quino-al-146863-unsplash.jpg">
+        <img class="logo" src="Branding/logo%20white.png">
+    </div>
+
+    <div class="spacer-mas"></div>
+
+    <section>
+        <div class="main-1">
+
+
+
+        </div>
+
+    </section>
+
+    <section>
+        <div class="main-1">
+
+
+
+        </div>
+
+    </section>
+
+    <script>
+        function checkScroll() {
+            var startY = $('.navbar').height() * 0; //The point where the navbar changes in px
+
+            if ($(window).scrollTop() > startY) {
+                $('.navbar').addClass("scrolled");
+            } else {
+                $('.navbar').removeClass("scrolled");
+            }
+
+            if ($(window).scrollTop() > startY) {
+                $('.aside-button').addClass("moved");
+            } else {
+                $('.aside-button').removeClass("moved");
+            }
+
+            if ($(window).scrollTop() > startY) {
+                $('.logo-micro').addClass("acted");
+            } else {
+                $('.logo-micro').removeClass("acted");
+            }
+        }
+
+        if ($('.navbar').length > 0) {
+            $(window).on("scroll load resize", function() {
+                checkScroll();
+            });
+        }
+
+        if ($('.aside-button').length > 0) {
+            $(window).on("scroll load resize", function() {
+                checkScroll();
+            });
+        }
+
+        if ($(window).scrollTop() > 150) {
+            $('.logo-micro').addClass("acted");
+        } else {
+            $('.logo-micro').removeClass("acted");
+        }
+
+    </script>
+
+</body>
+
+</html>
